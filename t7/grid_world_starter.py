@@ -46,17 +46,17 @@ class Grid:
             return s
 
         # Default: no movement
-        result = s 
+        result = s
 
         # Check borders
         """
-        TODO: Write code here to check if applying an action 
+        TODO: Write code here to check if applying an action
         keeps the agent with the boundary
         """
 
         # Check obstacle cells
         """
-        TODO: Write code here to check if applying an action 
+        TODO: Write code here to check if applying an action
         moves the agent into an obstacle cell
         """
 
@@ -131,19 +131,19 @@ class PolicyIteration:
         self.values = {state: 0 for state in self.grid.states}
         self.policy = {pi: RIGHT for pi in self.grid.states}
         self.r = [0 for s in self.grid.states]
-        for idx, state in enumerate(self.grid.states): 
-            if state in self.grid.rewards.keys(): 
+        for idx, state in enumerate(self.grid.states):
+            if state in self.grid.rewards.keys():
                 self.r[idx] = self.grid.rewards[state]
         print('r is ', self.r)
-    
+
     def next_iteration(self):
-        """ 
+        """
         TODO: Write code to orchestrate one iteration of PI here.
         """
         return
 
     def policy_evaluation(self):
-        """ 
+        """
         TODO: Write code for the policy evaluation step of PI here. That is, update
         the current value estimates using the current policy estimate.
         """
@@ -152,23 +152,28 @@ class PolicyIteration:
     def policy_improvement(self):
         """
         TODO: Write code to extract the best policy for a given value function here
-        """ 
+        """
         return
 
     def convergence_check(self):
         """
         TODO: Write code to check if PI has converged here
-        """   
+        """
         return
-        
+
     def print_values(self):
         for state, value in self.values.items():
             print(state, value)
-    
+
     def print_policy(self):
         for state, policy in self.policy.items():
             print(state, policy)
 
+    def print_values_and_policy(self):
+        # Useful debugging function used to show the states and their respective
+        # policies thus far (and whether we have reached convergence).
+        for state in self.grid.states:
+            print(state, ACTION_NAMES(self.policy[state]), self.values[state])
 
 if __name__ == "__main__":
     grid = Grid()
@@ -191,4 +196,3 @@ if __name__ == "__main__":
     end = time.time()
     print("Time to complete", i + 1, "VI iterations")
     print(end - start)
-    

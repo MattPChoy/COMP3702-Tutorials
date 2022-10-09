@@ -1,0 +1,96 @@
+Initial values:
+(0, 0) 0
+(0, 1) 0
+(0, 2) 0
+(1, 0) 0
+(1, 2) 0
+(2, 0) 0
+(2, 1) 0
+(2, 2) 0
+(3, 0) 0
+(3, 1) 0
+(3, 2) 0
+(-1, -1) 0
+
+MaxDiff: 100.0
+Values and Policies after iteration 1
+MaxDiff: 0.7200000000000001
+Values and Policies after iteration 2
+MaxDiff: 0.5184000000000001
+Values and Policies after iteration 3
+MaxDiff: 0.3732480000000001
+Values and Policies after iteration 4
+MaxDiff: 0.26873856000000007
+Values and Policies after iteration 5
+MaxDiff: 0.19651507200000007
+Values and Policies after iteration 6
+MaxDiff: 0.12516498432
+Values and Policies after iteration 7
+MaxDiff: 0.10572027144192
+Values and Policies after iteration 8
+MaxDiff: 0.0688670804422657
+Values and Policies after iteration 9
+MaxDiff: 0.055693793138070685
+Values and Policies after iteration 10
+MaxDiff: 0.03541895386310351
+Values and Policies after iteration 11
+MaxDiff: 0.020406488641122267
+Values and Policies after iteration 12
+MaxDiff: 0.014469165897111988
+Values and Policies after iteration 13
+MaxDiff: 0.01276617362193612
+Values and Policies after iteration 14
+MaxDiff: 0.010953912341080507
+Values and Policies after iteration 15
+MaxDiff: 0.009252095430991175
+Values and Policies after iteration 16
+MaxDiff: 0.0077449479888855866
+Values and Policies after iteration 17
+MaxDiff: 0.006452362030390624
+Values and Policies after iteration 18
+MaxDiff: 0.0053647123430298205
+Values and Policies after iteration 19
+MaxDiff: 0.004457891514759699
+Values and Policies after iteration 20
+MaxDiff: 0.003703988627437288
+Values and Policies after iteration 21
+MaxDiff: 0.0030769857665578215
+Values and Policies after iteration 22
+MaxDiff: 0.0025548243622560696
+Values and Policies after iteration 23
+MaxDiff: 0.0021195066796275974
+Values and Policies after iteration 24
+MaxDiff: 0.0017564643518459266
+Values and Policies after iteration 25
+MaxDiff: 0.0014538233682367119
+Values and Policies after iteration 26
+MaxDiff: 0.0012017914934342455
+Values and Policies after iteration 27
+MaxDiff: 0.0009922017781994474
+Values and Policies after iteration 28
+MaxDiff: 0.0008181866026194806
+Values and Policies after iteration 29
+MaxDiff: 0.0006739451222508019
+Values and Policies after iteration 30
+MaxDiff: 0.0005545718913637643
+Values and Policies after iteration 31
+MaxDiff: 0.0004559236087381957
+Values and Policies after iteration 32
+MaxDiff: 0.0003745096366224443
+Values and Policies after iteration 33
+MaxDiff: 0.00030739837798915426
+Values and Policies after iteration 34
+MaxDiff: 0.00025213556900344214
+Values and Policies after iteration 35
+MaxDiff: 0.00020667261021548033
+Values and Policies after iteration 36
+MaxDiff: 0.0001693039437246635
+Values and Policies after iteration 37
+MaxDiff: 0.0001386127553908434
+Values and Policies after iteration 38
+MaxDiff: 0.00011342429908361984
+Values and Policies after iteration 39
+MaxDiff: 9.27660922024065e-05
+Values and Policies after iteration 40
+Time to complete 40 VI iterations
+0.006981372833251953
