@@ -50,7 +50,7 @@ class Grid:
             return EXIT_STATE
 
         # Default: no movement
-        result = s
+        result = s 
 
         # Check borders
         if a == LEFT and x > 0:
@@ -157,7 +157,6 @@ class ValueIteration:
         self.values = new_values
         self.policy = new_policy
         self.it += 1
-
     def print_values(self):
         for state, value in self.values.items():
             print(state, value)
@@ -166,15 +165,13 @@ class ValueIteration:
         for state, action in self.policy.items():
             print(state, ACTION_NAMES[action])
 
+
     def print_values_and_policy(self):
         # Useful debugging function used to show the states and their respective
         # policies thus far (and whether we have reached convergence).
         for state in self.grid.states:
             print(state, "\t", ACTION_NAMES[self.policy[state]], "\t", self.values[state])
         print("Converged:", self.converged)
-
-
-
 
 class PolicyIteration:
     def __init__(self, grid):
@@ -279,10 +276,11 @@ class PolicyIteration:
             for i, s in enumerate(self.grid.states):
                 self.la_policy[i] = self.policy[s]
 
+
     def print_values(self):
         for state, value in self.values.items():
             print(state, value)
-
+            
     def print_policy(self):
         for state, policy in self.policy.items():
             print(state, policy)
@@ -310,6 +308,12 @@ def run_vi():
         vi.next_iteration()
         print("Values and Policies after iteration", i + 1)
         vi.print_values_and_policy()
+        # print("Values after iteration", i + 1)
+        # vi.print_values()
+        # print("Policy after iteration", i + 1)
+        # vi.print_policy()
+        # print()
+
         if vi.converged:
             break
 
@@ -318,7 +322,7 @@ def run_vi():
     print(end - start)
 
     plot_vi_diffs(vi.differences)
-
+    
 def run_pi():
     grid = Grid()
     pi = PolicyIteration(grid)
@@ -339,10 +343,10 @@ def run_pi():
             break
 
 
-
     end = time.time()
     print("Time to complete", i + 1, "VI iterations")
     print(end - start)
 
 if __name__ == "__main__":
     run_vi()
+    run_pi()
